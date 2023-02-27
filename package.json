@@ -1,0 +1,50 @@
+{
+  "name": "react-tooltip",
+  "version": "0.0.0",
+  "description": "🐭 Tooltips that respond to mouse events",
+  "repository": "git@github.com:cmg8431/react-tooltip.git",
+  "author": "cmg8431 <cmg8431@gmail.com>",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/react-tooltip.cjs",
+  "module": "dist/react-tooltip.esm.js",
+  "umd:main": "dist/react-tooltip.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rimraf dist && microbundle watch --jsx React.createElement --no-compress",
+    "build": "rimraf dist && microbundle --jsx React.createElement --jsxFragment React.Fragment"
+  },
+  "peerDependencies": {
+    "@stitches/react": ">=1",
+    "framer-motion": "10.x",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@stitches/react": "^1.2.8",
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^18.14.2",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "framer-motion": "^10.0.1",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
+  },
+  "packageManager": "yarn@3.4.1"
+}
