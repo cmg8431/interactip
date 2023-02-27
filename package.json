@@ -1,6 +1,7 @@
 {
   "name": "react-tooltip",
   "version": "0.0.0",
+  "packageManager": "yarn@3.4.1",
   "description": "🐭 Tooltips that respond to mouse events",
   "repository": "git@github.com:cmg8431/react-tooltip.git",
   "author": "cmg8431 <cmg8431@gmail.com>",
@@ -14,6 +15,7 @@
     "dist"
   ],
   "scripts": {
+    "postinstall": "husky install",
     "dev": "rimraf dist && microbundle watch --jsx React.createElement --no-compress",
     "build": "rimraf dist && microbundle --jsx React.createElement --jsxFragment React.Fragment"
   },
@@ -39,6 +41,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "framer-motion": "^10.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "microbundle": "^0.15.1",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
@@ -46,5 +50,10 @@
     "rimraf": "^4.1.2",
     "typescript": "^4.9.5"
   },
-  "packageManager": "yarn@3.4.1"
+  "lint-staged": {
+    "**/*.+(ts|tsx|js|jsx)": [
+      "eslint --fix --cache",
+      "prettier --write"
+    ]
+  }
 }
