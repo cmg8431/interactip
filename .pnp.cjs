@@ -32,6 +32,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:8.21.1"],\
             ["@types/node", "npm:18.14.2"],\
             ["@types/prettier", "npm:2.7.2"],\
+            ["@types/react", "npm:18.0.33"],\
+            ["@types/react-dom", "npm:18.0.11"],\
             ["@typescript-eslint/eslint-plugin", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:5.53.0"],\
             ["@typescript-eslint/parser", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:5.53.0"],\
             ["eslint", "npm:8.35.0"],\
@@ -2869,7 +2871,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-9d410286f2/0/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
           "packageDependencies": [\
             ["@stitches/react", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:1.2.8"],\
-            ["@types/react", null],\
+            ["@types/react", "npm:18.0.33"],\
             ["react", "npm:18.2.0"]\
           ],\
           "packagePeers": [\
@@ -2982,12 +2984,52 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/prop-types", [\
+        ["npm:15.7.5", {\
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
+          "packageDependencies": [\
+            ["@types/prop-types", "npm:15.7.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react", [\
+        ["npm:18.0.33", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.0.33-25b2635e24-4fbd2b2b6a.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.0.33"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.3"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react-dom", [\
+        ["npm:18.0.11", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.0.11-27f8db2995-579691e4d5.zip/node_modules/@types/react-dom/",\
+          "packageDependencies": [\
+            ["@types/react-dom", "npm:18.0.11"],\
+            ["@types/react", "npm:18.0.33"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/resolve", [\
         ["npm:1.17.1", {\
           "packageLocation": "./.yarn/cache/@types-resolve-npm-1.17.1-9a8396bef2-dc6a6df507.zip/node_modules/@types/resolve/",\
           "packageDependencies": [\
             ["@types/resolve", "npm:1.17.1"],\
             ["@types/node", "npm:18.14.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/scheduler", [\
+        ["npm:0.16.3", {\
+          "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.3-887bfc0086-2b0aec39c2.zip/node_modules/@types/scheduler/",\
+          "packageDependencies": [\
+            ["@types/scheduler", "npm:0.16.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4270,6 +4312,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["csstype", [\
+        ["npm:3.1.2", {\
+          "packageLocation": "./.yarn/cache/csstype-npm-3.1.2-cead7d99b2-e1a52e6c25.zip/node_modules/csstype/",\
+          "packageDependencies": [\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["damerau-levenshtein", [\
         ["npm:1.0.8", {\
           "packageLocation": "./.yarn/cache/damerau-levenshtein-npm-1.0.8-bda7311c69-d240b77575.zip/node_modules/damerau-levenshtein/",\
@@ -5411,8 +5462,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["framer-motion", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:10.0.1"],\
             ["@emotion/is-prop-valid", "npm:0.8.8"],\
-            ["@types/react", null],\
-            ["@types/react-dom", null],\
+            ["@types/react", "npm:18.0.33"],\
+            ["@types/react-dom", "npm:18.0.11"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:18.2.0"],\
             ["tslib", "npm:2.5.0"]\
@@ -8516,7 +8567,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-dom-virtual-d52cd0a43d/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
             ["react-dom", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:18.2.0"],\
-            ["@types/react", null],\
+            ["@types/react", "npm:18.0.33"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
@@ -8546,6 +8597,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:8.21.1"],\
             ["@types/node", "npm:18.14.2"],\
             ["@types/prettier", "npm:2.7.2"],\
+            ["@types/react", "npm:18.0.33"],\
+            ["@types/react-dom", "npm:18.0.11"],\
             ["@typescript-eslint/eslint-plugin", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:5.53.0"],\
             ["@typescript-eslint/parser", "virtual:9f994662595656dff2b59774c88f6387b9763b33e2ed68bf7d7290b10dd3d36402730b6ea5728b8e88f92897e4cf9065a7efc9d4b32b3fc356c5a31d54247b35#npm:5.53.0"],\
             ["eslint", "npm:8.35.0"],\

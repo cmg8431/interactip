@@ -61,6 +61,12 @@
         }
       }
     ],
+    "overrides": [
+      {
+        "files": ["./example/**/*.ts?(x)"],
+        "rules": {}
+      }
+    ],
     "import/prefer-default-export": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-no-target-blank": "error",
